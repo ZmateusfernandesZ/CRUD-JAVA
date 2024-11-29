@@ -1,0 +1,166 @@
+/* Estilo Global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb; /* Cor de fundo suave */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+h1 {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Contêiner do formulário */
+form {
+    background-color: white;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Campos do Formulário */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Muda a borda quando o campo é focado */
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Botões */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Efeito de hover no botão */
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #45a049; /* Efeito de hover no link */
+}
+
+/* Mensagens de Sucesso e Erro */
+p {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+p[color="green"] {
+    color: green;
+}
+
+p[color="red"] {
+    color: red;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    button {
+        padding: 12px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para as células e cabeçalhos da tabela */
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilo para as linhas alternadas */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
